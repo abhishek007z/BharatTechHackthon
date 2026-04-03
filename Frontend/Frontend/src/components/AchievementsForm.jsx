@@ -15,6 +15,7 @@ const AchievementsForm = ({ items = [], onAdd, onChange, onRemove }) => {
       return;
     }
 
+    
     setLoading(true);
     try {
       const prompt = `

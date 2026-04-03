@@ -26,6 +26,8 @@ const ResumePreview = ({ data }) => {
     skills: data.skills?.slice(0, 10) || [],
   };
 
+
+
   const renderTemplate = () => {
     switch (template) {
       case "minimal":
@@ -48,6 +50,8 @@ const ResumePreview = ({ data }) => {
     }
   };
 
+
+  
   return (
     <div className="bg-white">
       {renderTemplate()}
