@@ -46,17 +46,17 @@ Generate a professional achievement description. Make it concise, impactful, ATS
       <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-white rounded-2xl border border-blue-200">
         <div className="flex items-center gap-3">
           <div className="p-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg">
-            <Award className="size-5 text-white" />
+            <Award className ="size-5 text-white" />
           </div>
           <div>
-            <h3 className="font-semibold text-slate-900">Achievements & Certifications</h3>
-            <p className="text-xs text-slate-600">Showcase awards and recognitions</p>
+            <h3 className ="font-semibold text-slate-900">Achievements & Certifications</h3>
+            <p className ="text-xs text-slate-600">Showcase awards and recognitions</p>
           </div>
         </div>
         <button
           type="button"
           onClick={onAdd}
-          className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-medium rounded-xl"
+          className ="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-medium rounded-xl"
         >
           <PlusCircle className="size-4" /> Add Achievement
         </button>
@@ -76,17 +76,17 @@ Generate a professional achievement description. Make it concise, impactful, ATS
             rows={3}
             value={item.description || ""}
             onChange={(e) => onChange(index, "description", e.target.value)}
-            placeholder="Achievement description"
-            className="w-full px-3 py-2 border rounded-lg"
+            placeholder ="Achievement description"
+            className ="w-full px-3 py-2 border rounded-lg"
           />
 
-          <div className="flex justify-between">
+          <div className ="flex justify-between">
 
             <button
               type="button"
               onClick={() => generateAIResponse(index)}
               disabled={loading}
-              className="inline-flex items-center gap-1 text-xs px-3 py-1.5 border rounded-full hover:bg-blue-50 text-blue-700 border-blue-200"
+              className ="inline-flex items-center gap-1 text-xs px-3 py-1.5 border rounded-full hover:bg-blue-50 text-blue-700 border-blue-200"
             >
               <Sparkles className="size-3.5" />
               {loading ? "Generating..." : "Generate AI Description"}
@@ -96,7 +96,7 @@ Generate a professional achievement description. Make it concise, impactful, ATS
             
               type="button"
               onClick={() => onRemove(index)}
-              className="text-red-500 text-xs"
+              className ="text-red-500 text-xs"
             >
               Remove
             </button>

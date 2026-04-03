@@ -147,8 +147,8 @@ const ExperienceForm = ({ items = [], onAdd, onChange, onRemove }) => {
               onClick={() => onRemove(index)}
               className="group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-50 to-white border border-red-200 text-red-700 rounded-lg hover:border-red-500 hover:bg-red-50 transition-all"
             >
-              <Trash2 className="size-4 group-hover:scale-110 transition-transform" />
-              <span className="text-sm font-medium">Remove</span>
+              <Trash2 className ="size-4 group-hover:scale-110 transition-transform" />
+              <span className ="text-sm font-medium">Remove</span>
             </button>
           </div>
         </div>

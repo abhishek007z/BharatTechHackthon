@@ -149,28 +149,28 @@ const Footer = () => {
               className="p-2.5 bg-slate-800/50 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500 rounded-lg group transition-all"
               aria-label="LinkedIn"
             >
-              <Linkedin className="size-5 text-slate-400 group-hover:text-white" />
+              <Linkedin className ="size-5 text-slate-400 group-hover:text-white" />
             </a>
             <a 
               href="#" 
-              className="p-2.5 bg-slate-800/50 hover:bg-sky-600/20 border border-slate-700 hover:border-sky-500 rounded-lg group transition-all"
+              className ="p-2.5 bg-slate-800/50 hover:bg-sky-600/20 border border-slate-700 hover:border-sky-500 rounded-lg group transition-all"
               aria-label="Twitter"
             >
-              <Twitter className="size-5 text-slate-400 group-hover:text-white" />
+              <Twitter className ="size-5 text-slate-400 group-hover:text-white" />
             </a>
             <a 
               href="#" 
               className="p-2.5 bg-slate-800/50 hover:bg-pink-600/20 border border-slate-700 hover:border-pink-500 rounded-lg group transition-all"
               aria-label="Instagram"
             >
-              <Instagram className="size-5 text-slate-400 group-hover:text-white" />
+              <Instagram className ="size-5 text-slate-400 group-hover:text-white" />
             </a>
             <a 
               href="#" 
               className="p-2.5 bg-slate-800/50 hover:bg-red-600/20 border border-slate-700 hover:border-red-500 rounded-lg group transition-all"
               aria-label="YouTube"
             >
-              <Youtube className="size-5 text-slate-400 group-hover:text-white" />
+              <Youtube className ="size-5 text-slate-400 group-hover:text-white" />
             </a>
           </div>
         </div>

@@ -106,11 +106,11 @@ const ColorPicker = ({ value, onChange, palette = defaultPalette }) => {
 
         {/* Color Harmony */}
         <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
-            <span className="text-sm font-medium text-slate-900">Color Harmony</span>
+          <div className ="flex items-center gap-3 mb-3">
+            <div className ="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+            <span className ="text-sm font-medium text-slate-900">Color Harmony</span>
           </div>
-          <p className="text-xs text-slate-600">
+          <p className ="text-xs text-slate-600">
             This color will be used for headings, accents, and highlights throughout your resume.
             Choose a color that represents your personal brand.
           </p>

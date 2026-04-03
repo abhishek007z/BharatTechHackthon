@@ -115,8 +115,8 @@ const CallToAction = () => {
         </div>
         
         {/* Floating Elements */}
-        <div className="absolute -bottom-20 left-10 w-40 h-40 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute -top-20 right-10 w-40 h-40 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 left-10 w-40 h-40 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"> </div>
+        <div className="absolute -top-20 right-10 w-40 h-40 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-full blur-3xl"> </div>
       </div>
     </div>
   )
