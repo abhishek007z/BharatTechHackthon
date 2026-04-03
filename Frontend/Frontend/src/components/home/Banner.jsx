@@ -5,7 +5,8 @@ const Banner = () => {
   return (
     <div className="relative w-full py-4 font-medium text-sm text-center overflow-hidden">
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 animate-gradient-x"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 animate-gradient-x"> 
+      </div>
       
       {/* Animated dots overlay */}
       <div className="absolute inset-0 opacity-20">
@@ -16,6 +17,7 @@ const Banner = () => {
 
       <div className="relative z-10 flex items-center justify-center gap-3">
         <div className="flex items-center gap-2 px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
+
           <Sparkles className="size-4 text-yellow-300 animate-pulse" />
           <span className="text-white font-semibold">New</span>
         </div>

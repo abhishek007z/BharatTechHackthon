@@ -9,6 +9,7 @@ const TemplateSelector = ({ templates, selected, onSelect }) => {
         <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg">
           <Layout className="size-5 text-white" />
         </div>
+        
         <div>
           <h3 className="font-semibold text-slate-900">Choose Template</h3>
           <p className="text-xs text-slate-600">
@@ -85,6 +86,7 @@ const TemplateSelector = ({ templates, selected, onSelect }) => {
                 <p className="text-sm text-slate-700 leading-relaxed">
                   {item.description}
                 </p>
+
               </div>
 
               {/* Template Features */}
@@ -100,6 +102,7 @@ const TemplateSelector = ({ templates, selected, onSelect }) => {
                 <span className="px-2 py-1 text-xs rounded bg-gradient-to-r from-slate-100 to-white border border-slate-300 text-slate-700">
                   Professional
                 </span>
+
               </div>
 
               {/* Hover Effect */}

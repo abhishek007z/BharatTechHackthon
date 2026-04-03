@@ -81,6 +81,7 @@ Generate a professional achievement description. Make it concise, impactful, ATS
           />
 
           <div className="flex justify-between">
+
             <button
               type="button"
               onClick={() => generateAIResponse(index)}
@@ -92,6 +93,7 @@ Generate a professional achievement description. Make it concise, impactful, ATS
             </button>
 
             <button
+            
               type="button"
               onClick={() => onRemove(index)}
               className="text-red-500 text-xs"

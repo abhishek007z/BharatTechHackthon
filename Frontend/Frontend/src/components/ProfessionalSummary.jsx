@@ -22,8 +22,11 @@ const ProfessionalSummary = ({ value, onChange }) => {
   };
 
   // 🔥 BACKEND AI CALL
+
 const generateAIResponse = async () => {
+  
   // 🔴 1. Empty check
+
   if (!value || value.trim().length < 10) {
     alert("Please write something first (at least 10 characters)");
     return;

@@ -65,6 +65,7 @@ const Features = () => {
                 </div>
 
                 {/* Feature Showcase */}
+                
                 <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-6xl">
                     {/* Left Column - Feature Cards */}
                     <div className="space-y-6">
@@ -155,6 +156,7 @@ const Features = () => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             
                             {/* Stats Bar */}
