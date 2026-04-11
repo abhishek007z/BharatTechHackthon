@@ -4,6 +4,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434/api/generate";
 const USE_OLLAMA = process.env.USE_OLLAMA === "true";
 
+
 let googleModel = null;
 if (!USE_OLLAMA) {
   if (!process.env.OPENAI_API_KEY || !process.env.OPENAI_MODEL) {
@@ -44,6 +45,7 @@ export const geminiModel = {
       }
     }
 
+    
     // Google Gemini (fallback when USE_OLLAMA not true)
     try {
       const result = await googleModel.generateContent(prompt);
