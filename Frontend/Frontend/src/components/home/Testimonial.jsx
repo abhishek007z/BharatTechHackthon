@@ -133,16 +133,16 @@ const Testimonial = () => {
                 {/* Stats Bar */}
                 <div className="mt-16 flex justify-center">
                     <div className="inline-flex items-center gap-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-200">
-                        <div className="text-center">
-                            <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">10,000+</div>
-                            <div className="text-sm text-slate-600 mt-1">Happy Users</div>
+                        <div className ="text-center">
+                            <div className ="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">10,000+</div>
+                            <div className ="text-sm text-slate-600 mt-1">Happy Users</div>
                         </div>
-                        <div className="h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+                        <div className ="h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">95%</div>
-                            <div className="text-sm text-slate-600 mt-1">Interview Rate</div>
+                            <div className ="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">95%</div>
+                            <div className ="text-sm text-slate-600 mt-1">Interview Rate</div>
                         </div>
-                        <div className="h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+                        <div className ="h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
                         <div className="text-center">
                             <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">4.9</div>
                             <div className="text-sm text-slate-600 mt-1">Average Rating</div>

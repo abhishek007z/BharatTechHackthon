@@ -22,8 +22,11 @@ const ProfessionalSummary = ({ value, onChange }) => {
   };
 
   // 🔥 BACKEND AI CALL
+
 const generateAIResponse = async () => {
+  
   // 🔴 1. Empty check
+
   if (!value || value.trim().length < 10) {
     alert("Please write something first (at least 10 characters)");
     return;
@@ -67,7 +70,7 @@ const generateAIResponse = async () => {
             type="button"
             onClick={generateAIResponse}
             disabled={loading}
-            className="inline-flex items-center gap-1 text-xs px-3 py-1.5 border rounded-full hover:bg-blue-50 text-blue-700 border-blue-200 transition disabled:opacity-60"
+            className= "inline-flex items-center gap-1 text-xs px-3 py-1.5 border rounded-full hover:bg-blue-50 text-blue-700 border-blue-200 transition disabled:opacity-60"
           >
             {loading ? "Generating..." : "Enhance with AI"}
           </button>
@@ -77,12 +80,12 @@ const generateAIResponse = async () => {
       <textarea
         rows={5}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder="Tell recruiters about your strengths, impact, and what you want next."
-        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+        onChange ={(e) => onChange(e.target.value)}
+        placeholder ="Tell recruiters about your strengths, impact, and what you want next."
+        className ="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
       />
 
-      <div className="flex justify-between text-xs text-slate-500">
+      <div className ="flex justify-between text-xs text-slate-500">
         <span>Use action words + metrics to highlight impact.</span>
         <span>{wordCount} words</span>
       </div>

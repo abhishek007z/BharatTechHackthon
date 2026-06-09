@@ -65,6 +65,7 @@ const Features = () => {
                 </div>
 
                 {/* Feature Showcase */}
+                
                 <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-6xl">
                     {/* Left Column - Feature Cards */}
                     <div className="space-y-6">
@@ -155,21 +156,22 @@ const Features = () => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             
                             {/* Stats Bar */}
                             <div className="mt-8 flex flex-wrap justify-center gap-6">
                                 <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">10K+</div>
-                                    <div className="text-sm text-slate-600">Users Trust Us</div>
+                                    <div className ="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">10K+</div>
+                                    <div className ="text-sm text-slate-600">Users Trust Us</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">95%</div>
-                                    <div className="text-sm text-slate-600">Success Rate</div>
+                                    <div className ="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">95%</div>
+                                    <div className ="text-sm text-slate-600">Success Rate</div>
                                 </div>
-                                <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">4.9★</div>
-                                    <div className="text-sm text-slate-600">Avg Rating</div>
+                                <div className ="text-center">
+                                    <div className ="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">4.9★</div>
+                                    <div className ="text-sm text-slate-600">Avg Rating</div>
                                 </div>
                             </div>
                         </div>

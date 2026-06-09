@@ -190,18 +190,18 @@ const Hero = () => {
         </div> */}
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl">
-          <div className="p-6 bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-200 text-center">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">95%</div>
-            <p className="text-sm text-slate-600 mt-2">Interview Call Rate</p>
+        <div className ="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl">
+          <div className ="p-6 bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-200 text-center">
+            <div className ="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent"> 95% </div>
+            <p className ="text-sm text-slate-600 mt-2">Interview Call Rate</p>
           </div>
-          <div className="p-6 bg-gradient-to-br from-purple-50 to-white rounded-2xl border border-purple-200 text-center">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">10K+</div>
-            <p className="text-sm text-slate-600 mt-2">Successful Resumes</p>
+          <div className ="p-6 bg-gradient-to-br from-purple-50 to-white rounded-2xl border border-purple-200 text-center">
+            <div className ="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent"> 10K+ </div>
+            <p className ="text-sm text-slate-600 mt-2">Successful Resumes</p>
           </div>
-          <div className="p-6 bg-gradient-to-br from-emerald-50 to-white rounded-2xl border border-emerald-200 text-center">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">4.9★</div>
-            <p className="text-sm text-slate-600 mt-2">User Rating</p>
+          <div className ="p-6 bg-gradient-to-br from-emerald-50 to-white rounded-2xl border border-emerald-200 text-center">
+            <div className ="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent"> 4.9★ </div>
+            <p className ="text-sm text-slate-600 mt-2">User Rating</p>
           </div>
         </div>
       </section>

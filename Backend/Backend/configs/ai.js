@@ -26,6 +26,7 @@ async function postJson(url, body, headers = {}) {
   return data;
 }
 
+
 let googleModel = null;
 if (!USE_OLLAMA && !USE_GROQ) {
   if (!process.env.OPENAI_API_KEY || !process.env.OPENAI_MODEL) {
@@ -109,6 +110,7 @@ export const geminiModel = {
       }
     }
 
+    
     // Google Gemini (fallback when USE_OLLAMA not true)
     try {
       const result = await googleModel.generateContent(prompt);

@@ -138,7 +138,7 @@ const PhaseHeader = () => {
                   
                   {/* Active Indicator */}
                   {isActive && (
-                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white animate-pulse"></div>
+                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white animate-pulse">  </div>
                   )}
                 </div>
                 
@@ -165,7 +165,8 @@ const PhaseHeader = () => {
       {/* Current Phase Status */}
       <div className="mt-4 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full">
-          <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
+
+          <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse">  </div>
           <span className="text-sm font-medium text-blue-700">
             {phases.find(p => p.id === currentPhase)?.label} • 
             <span className="font-normal ml-1">

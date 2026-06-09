@@ -180,16 +180,16 @@ const PersonalInfoForm = ({
             <div key={field.key} className="group space-y-2">
               <div className="flex items-center justify-between">
                 <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
-                  <Icon className="size-4 text-blue-500" />
+                  <Icon className ="size-4 text-blue-500" />
                   {field.label}
                   {field.required && <span className="text-red-500">*</span>}
                 </label>
                 {isComplete && (
-                  <CheckCircle className="size-4 text-emerald-500" />
+                  <CheckCircle className ="size-4 text-emerald-500" />
                 )}
               </div>
 
-              <div className="relative">
+              <div className ="relative">
                 <input
                   type={field.type}
                   value={data[field.key] || ""}
@@ -210,16 +210,16 @@ const PersonalInfoForm = ({
       {/* Completion Tips */}
       <div className="p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl border border-blue-200">
         <div className="flex items-start gap-3">
-          <Sparkles className="size-5 text-blue-600 mt-0.5" />
+          <Sparkles className= "size-5 text-blue-600 mt-0.5" />
           <div>
-            <h4 className="font-medium text-slate-900 mb-2">Tips for a Complete Profile</h4>
+            <h4 className= "font-medium text-slate-900 mb-2">Tips for a Complete Profile</h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                 <span>Use your professional email address</span>
               </li>
-              <li className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+              <li className ="flex items-center gap-2">
+                <div className ="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
                 <span>Include your LinkedIn profile for credibility</span>
               </li>
               <li className="flex items-center gap-2">
