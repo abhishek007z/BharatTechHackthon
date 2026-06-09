@@ -1,11 +1,33 @@
-import axios from "axios";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434/api/generate";
 const USE_OLLAMA = process.env.USE_OLLAMA === "true";
+const USE_GROQ = process.env.USE_GROQ === "true";
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const GROQ_MODEL = process.env.GROQ_MODEL || "groq-1";
+
+async function postJson(url, body, headers = {}) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...headers,
+    },
+    body: JSON.stringify(body),
+  });
+
+  const data = await response.json().catch(() => null);
+
+  if (!response.ok) {
+    const message = data?.error?.message || data?.message || `Request failed with status ${response.status}`;
+    throw new Error(message);
+  }
+
+  return data;
+}
 
 let googleModel = null;
-if (!USE_OLLAMA) {
+if (!USE_OLLAMA && !USE_GROQ) {
   if (!process.env.OPENAI_API_KEY || !process.env.OPENAI_MODEL) {
     console.warn("[AI Config] OPENAI_API_KEY or OPENAI_MODEL is missing, switching to OLLAMA mode.");
   } else {
@@ -20,22 +42,65 @@ export const geminiModel = {
       throw new Error("Invalid prompt");
     }
 
+    if (USE_GROQ) {
+      if (!GROQ_API_KEY) {
+        throw new Error("GROQ mode activated but GROQ_API_KEY is not set.");
+      }
+      try {
+        const groqUrl = process.env.GROQ_URL || `https://api.groq.com/v1/models/${GROQ_MODEL}/generate`;
+        const data = await postJson(
+          groqUrl,
+          {
+            input: prompt,
+            max_output_tokens: 512,
+          },
+          {
+            Authorization: `Bearer ${GROQ_API_KEY}`,
+          }
+        );
+
+        let outputText = "";
+        if (data?.output?.length > 0) {
+          if (typeof data.output[0] === "string") {
+            outputText = data.output[0];
+          } else if (data.output[0]?.content) {
+            outputText = data.output[0].content;
+          }
+        } else if (data?.text) {
+          outputText = data.text;
+        }
+
+        if (!outputText) {
+          throw new Error("GROQ response is empty or unexpected format.");
+        }
+
+        return {
+          response: {
+            text: () => outputText,
+          },
+        };
+      } catch (error) {
+        console.error("GROQ Error:", error?.response?.data || error.message || error);
+        throw new Error("AI generation failed via GROQ");
+      }
+    }
+
     if (USE_OLLAMA || !googleModel) {
       // Use local OLLAMA server
       try {
-        const response = await axios.post(OLLAMA_URL, {
+        const data = await postJson(OLLAMA_URL, {
           model: process.env.OLLAMA_MODEL || "qwen2.5:7b",
           prompt: prompt,
           stream: false,
         });
 
-        if (!response?.data?.response) {
+        if (!data?.response) {
           throw new Error("OLLAMA response missing 'response' field.");
         }
 
         return {
           response: {
-            text: () => response.data.response,
+            text: () => data.response,
           },
         };
       } catch (error) {
